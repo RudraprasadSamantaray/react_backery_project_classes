@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "name": "Chocolate Cake",
+        "category": "Cakes",
+        "price": 550,
+        "description": "Delicious chocolate cake covered with rich chocolate cream.",
+        "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587"
+    },
+    {
+        "id": 2,
+        "name": "Red Velvet Cake",
+        "category": "Cakes",
+        "price": 650,
+        "description": "Soft red velvet cake with smooth cream cheese frosting.",
+        "image": "https://images.unsplash.com/photo-1586788680434-30d324b2d46f"
+    },
+    {
+        "id": 3,
+        "name": "Black Forest Cake",
+        "category": "Cakes",
+        "price": 600,
+        "description": "Classic black forest cake with cherries, chocolate and fresh cream.",
+        "image": "https://images.unsplash.com/photo-1571115177098-24ec42ed204d"
+    },
+    {
+        "id": 4,
+        "name": "Chocolate Brownie",
+        "category": "Brownies",
+        "price": 120,
+        "description": "Soft and fudgy chocolate brownie with a delicious chocolate flavour.",
+        "image": "https://images.unsplash.com/photo-1564355808539-22fda35bed7e"
+    },
+    {
+        "id": 5,
+        "name": "Chocolate Cupcake",
+        "category": "Cupcakes",
+        "price": 90,
+        "description": "Soft chocolate cupcake topped with creamy chocolate frosting.",
+        "image": "https://images.unsplash.com/photo-1587668178277-295251f900ce"
+    },
+    {
+        "id": 6,
+        "name": "Strawberry Cupcake",
+        "category": "Cupcakes",
+        "price": 100,
+        "description": "Fresh strawberry cupcake topped with strawberry cream.",
+        "image": "https://images.unsplash.com/photo-1486427944299-d1955d23e34d"
+    },
+    {
+        "id": 7,
+        "name": "Chocolate Donut",
+        "category": "Donuts",
+        "price": 80,
+        "description": "Soft and delicious donut covered with chocolate glaze.",
+        "image": "https://images.unsplash.com/photo-1551024601-bec78aea704b"
+    },
+    {
+        "id": 8,
+        "name": "Butter Croissant",
+        "category": "Pastries",
+        "price": 110,
+        "description": "Fresh and crispy French-style butter croissant.",
+        "image": "https://images.unsplash.com/photo-1555507036-ab1f4038808a"
+    }
+]

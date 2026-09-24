@@ -5,7 +5,6 @@ import './nav.css'
 export default function Nav() {
 
     return (
-
         <div className="nav">
 
             <h2 className="logo">
@@ -15,7 +14,7 @@ export default function Nav() {
             <ul>
 
                 <li>
-                    <Link to="/">
+                    <Link to="/home">
                         Home
                     </Link>
                 </li>
@@ -23,12 +22,6 @@ export default function Nav() {
                 <li>
                     <Link to="/allproducts">
                         Products
-                    </Link>
-                </li>
-
-                <li>
-                    <Link to="/login">
-                        Login
                     </Link>
                 </li>
 
@@ -41,6 +34,5 @@ export default function Nav() {
             </ul>
 
         </div>
-
     )
 }

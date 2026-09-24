@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
-
+import { useNavigate } from 'react-router-dom'
 export default function Login({ login, setLogin }) {
 
     let [username, setUsername] = useState("")
     let [password, setPassword] = useState("")
-
+    let navigate = useNavigate()
     let [users, setUsers] = useState([])
 
 
@@ -41,7 +41,7 @@ export default function Login({ login, setLogin }) {
         if (user) {
 
             setLogin(true)
-
+            navigate("/home")
             alert("Login successful!")
 
         }

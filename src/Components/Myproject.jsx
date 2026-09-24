@@ -1,38 +1,63 @@
 import React, { useState } from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import {
+    BrowserRouter,
+    Route,
+    Routes
+} from 'react-router-dom'
+
 import Nav from '../Pages/Nav'
-import Login from './Login'
 import Home from './Home'
+import Login from './Login'
 import Allproduct from './Allproduct'
 import Productdetails from './Productdetails'
 import Cart from './Cart'
+
+
 export default function Myproject() {
+
     let [login, setLogin] = useState(false)
+
     let [cart, setCart] = useState([])
+
+
     return (
+
         <div>
+
             <BrowserRouter>
-                {
-                    login && <Nav cart={cart} />
-                }
+
+                <Nav />
+
+
                 <Routes>
+
                     <Route
                         path="/"
-                        element={<Login setLogin={setLogin} />}
-                    />
-                    <Route
-                        path="/home"
-                        element={<Home />}
-                    />
-                    <Route
-                        path="/allproducts"
                         element={
-                            <Allproduct
-                                cart={cart}
-                                setCart={setCart}
+                            <Home />
+                        }
+                    />
+
+
+                    <Route
+                        path="/login"
+                        element={
+                            <Login
+                                login={login}
+                                setLogin={setLogin}
                             />
                         }
                     />
+
+
+                    <Route
+                        path="/allproducts"
+                        element={
+                            <Allproduct />
+                        }
+                    />
+
+
                     <Route
                         path="/product/:id"
                         element={
@@ -42,6 +67,8 @@ export default function Myproject() {
                             />
                         }
                     />
+
+
                     <Route
                         path="/cart"
                         element={
@@ -51,8 +78,11 @@ export default function Myproject() {
                             />
                         }
                     />
+
                 </Routes>
+
             </BrowserRouter>
+
         </div>
     )
 }

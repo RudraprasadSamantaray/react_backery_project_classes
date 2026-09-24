@@ -1,10 +1,12 @@
-import React from 'react'
+import './App.css'
 import Myproject from './Components/Myproject'
+
 function App() {
+
     return (
-        <div>
-            <Myproject />
-        </div>
+        <Myproject />
     )
+
 }
+
 export default App

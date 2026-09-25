@@ -10,9 +10,7 @@ export default function Home() {
                 brownies, donuts and pastries.
             </p>
             <Link to="/allproducts">
-                <button>
-                    View All Products
-                </button>
+                <button>  View All Products </button>
             </Link>
         </div>
     )

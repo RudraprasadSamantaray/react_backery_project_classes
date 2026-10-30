@@ -14,9 +14,9 @@ export default function Cart({ cart, setCart }) {
         }
     }
 
-    let removeCart = (id) => {
-        let data = cart.filter((p) => {
-            return p.id !== id
+    let removeCart = (index) => {
+        let data = cart.filter((p,i) => {
+            return i !== index
         })
         setCart(data)
     }
@@ -72,7 +72,7 @@ export default function Cart({ cart, setCart }) {
                                                 ₹{p.price * p.quantity}
                                             </p>
                                             <button className="remove-btn" onClick={() =>
-                                                    removeCart(p.id)
+                                                    removeCart(index)
                                                 } > Remove </button>
                                         </div>
                                     </div>

@@ -12,7 +12,7 @@ export default function Myproject() {
     return (
         <BrowserRouter>
             {
-                login && <Nav />
+                login && <Nav cart={cart} />
             }
             <Routes>
                 <Route path="/" element={ login ? <Navigate to="/home" /> : <Login login={login} setLogin={setLogin} /> } />

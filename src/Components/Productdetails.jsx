@@ -6,7 +6,7 @@ export default function Productdetails({ cart, setCart }) {
 
     let { id } = useParams()
     let getapi = async () => {
-        let rdata = await fetch("/Products.json")
+        let rdata = await fetch("http://localhost:5000/api/products")
         let data = await rdata.json()
         let p = data.find((x) => {
             return x.id == id

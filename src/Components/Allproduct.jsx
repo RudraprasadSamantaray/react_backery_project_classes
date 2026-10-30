@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 export default function Allproduct() {
     let [product, setProduct] = useState([])
     let getapi = async () => {
-        let rdata = await fetch("/Products.json")
+        let rdata = await fetch("http://localhost:5000/api/products")
         let data = await rdata.json()
         setProduct(data)
     }
